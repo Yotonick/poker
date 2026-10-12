@@ -1,0 +1,19 @@
+/* очень низкие экраны (маленькие телефоны, Telegram без разворота) */
+@media (max-height: 640px) {
+  .dealer-zone { height: clamp(96px, 16dvh, 130px); }
+  .player-zone { height: 74px; }
+  .hero-cards .card { --cw: 44px; }
+  .actions .btn { min-height: 50px; }
+  .btn-xl { min-height: 56px; }
+  .menu-dealer { bottom: 100px; height: min(56%, 300px); }
+}
+@media (max-width: 350px) {
+  .actions .btn { font-size: 13px; }
+  .seat { width: 74px; }
+  .seat-name { font-size: 11px; }
+}
+/* ПК: игра по центру в «телефонной» колонке */
+@media (min-width: 521px) {
+  body { background: radial-gradient(circle at 50% 0%, #1a0a10, #050203); }
+  #app { border-left: 1px solid rgba(217, 183, 90, .25); border-right: 1px solid rgba(217, 183, 90, .25); box-shadow: 0 0 60px rgba(0, 0, 0, .8); }
+}
